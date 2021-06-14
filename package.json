@@ -1,0 +1,28 @@
+{
+	"name": "sample-docker",
+	"version": "1.0.0",
+	"description": "Node.js on Docker Example",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/devdw98/node-docker-example.git"
+	},
+	"keywords": [
+		"docker",
+		"docker-compose",
+		"node"
+	],
+	"author": "dowonpark",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/devdw98/node-docker-example/issues"
+	},
+	"homepage": "https://github.com/devdw98/node-docker-example#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	}
+}

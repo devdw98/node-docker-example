@@ -18,7 +18,8 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: '${MONGO_USER}'
       MONGO_INITDB_ROOT_PASSWORD: '${MONGO_PASS}'
-  web:
+  app:
+    container_name: app
     build: .
     ports:
       - '8080:8080'

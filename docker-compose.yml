@@ -13,6 +13,8 @@ services:
   app-1:
     container_name: test-1
     image: test:0.0.1
+    ports:
+      - 3001
 
   # app-2:
   #   container_name: test-2

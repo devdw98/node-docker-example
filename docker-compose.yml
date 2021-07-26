@@ -2,13 +2,18 @@
 version: '3.1'
 # 이 항목 밑에 실행하려는 컨테이너 들을 정의
 services:
+  nginx:
+    container_name: node-nginx
+    build: ./nginx
+    ports:
+      - 80:80
+    links:
+      - app-1
+      - app-2
   app-1:
     container_name: test-1
     image: test:0.0.1
-    ports:
-      - 3000
+
   app-2:
     container_name: test-2
     image: test:0.0.1
-    ports:
-      - 3000

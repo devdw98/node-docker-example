@@ -14,8 +14,10 @@ services:
     container_name: test-1
     image: test:0.0.1
     ports:
-      - 3001:3000
+      - 3000
 
-  # app-2:
-  #   container_name: test-2
-  #   image: test:0.0.1
+  app-2:
+    container_name: test-2
+    image: test:0.0.1
+    ports:
+      - 3000

@@ -9,15 +9,20 @@ services:
       - 80:80
     links:
       - app-1
-  # - app-2
+      - app-2
+      - app-3
   app-1:
     container_name: test-1
-    image: test:0.0.1
-    ports:
-      - 3000
+    image: test:0.0.2
+    # ports:
+    #   - 3000
 
   app-2:
     container_name: test-2
-    image: test:0.0.1
-    ports:
-      - 3000
+    image: test:0.0.2
+    # ports:
+    #   - 3000
+
+  app-3:
+    container_name: test-3
+    image: test:0.0.2
